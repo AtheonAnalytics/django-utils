@@ -15,8 +15,8 @@ setup(
     install_requires=[
         'django>=3.0, <3.1',
         'requests>=2, <3',
-        'python-json-logger>=0.1.11 <1',
-        'django-model-utils=>4 < 5'
+        'python-json-logger>=0.1.11, <1',
+        'django-model-utils=>4, < 5'
     ],
     include_package_data=True,
     keywords='django-utils',
