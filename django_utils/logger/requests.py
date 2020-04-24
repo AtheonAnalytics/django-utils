@@ -42,7 +42,7 @@ def resolve_logging_level(code: int) -> str:
 def connection_handler(function):
     """ Handle requests error if connection fail. """
 
-    def _wrapped_view(*args, **kwargs) -> Tuple[int, Dict[Any], str]:
+    def _wrapped_view(*args, **kwargs):
 
         response = None
 
