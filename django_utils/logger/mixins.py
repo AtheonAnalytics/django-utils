@@ -18,7 +18,7 @@ class APILoggingMixin(object):
         }
         logger = logging.getLogger(__name__)
         level = resolve_logging_level(response.status_code)
-        getattr(logger, level)('API', extra=extra)
+        getattr(logger, level)(f'API {response.status_code} {request.path}', extra=extra)
 
         return super(APILoggingMixin, self).finalize_response(
             request, response, *args, **kwargs)

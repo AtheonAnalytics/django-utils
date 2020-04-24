@@ -90,8 +90,7 @@ def connection_handler(function):
             'payload': payload,
         }
         logger = logging.getLogger(__name__)
-        getattr(logger, level)('API Logger', extra=extra)
-
+        getattr(logger, level)(f'API {status_code} {url}', extra=extra)
         return status_code, response_json, response_text
 
     return _wrapped_view
