@@ -23,5 +23,5 @@ setup(
     name='django-utils',
     packages=setuptools.find_packages(),
     test_suite='tests',
-    version='1.1.0',
+    version='1.1.1',
 )
