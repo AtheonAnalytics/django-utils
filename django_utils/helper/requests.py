@@ -96,7 +96,7 @@ def connection_handler(function):
     return _wrapped_view
 
 
-class RequestsLogger(object):
+class RequestsHelper(object):
     """ Helper for api connections """
 
     def __init__(self, username: str = None, password: str = None, timeout: int = 60,
@@ -140,4 +140,4 @@ def add_http_method(cls, i):
 
 
 for method in ['get', 'post', 'put', 'patch', 'delete']:
-    add_http_method(RequestsLogger, method)
+    add_http_method(RequestsHelper, method)

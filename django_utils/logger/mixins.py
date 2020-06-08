@@ -1,6 +1,6 @@
 import logging
 
-from .requests import resolve_logging_level
+from ..helper.requests import resolve_logging_level
 
 
 class APILoggingMixin(object):
