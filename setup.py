@@ -13,10 +13,10 @@ setup(
     ],
     description="Atheon Django Utils",
     install_requires=[
-        'django>=3.0, <3.1',
+        'django>=3.0',
         'requests>=2, <3',
-        'python-json-logger>=0.1.11, <1',
-        'django-model-utils>=4, <5'
+        'python-json-logger<1',
+        'django-model-utils<5'
     ],
     include_package_data=True,
     keywords='django-utils',
