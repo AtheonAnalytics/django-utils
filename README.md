@@ -15,7 +15,3 @@ Feature flag package which enable per client feature flags (through customizable
  - `CleanedJsonFormatter` logging formatter to clean sensitive data from json logs 
  - `log_with_time` context manager to log code execution time
 
-## misc
-
- - `RealIPMiddleware` to capture real user IP address (behind proxy)
- - `AdminLinkMixin` gives generic admin url to change form
