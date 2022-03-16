@@ -36,7 +36,7 @@ class ClientFlag(TimeStampedModel):
     slug = models.SlugField(max_length=100, unique=True)  #:
     #: Flag override any further settings if not ``Unknown`` status. Options
     #: are: ``Yes``, ``No``, ``Unknown``
-    everyone = models.NullBooleanField(blank=True, help_text=(
+    everyone = models.BooleanField(null=True, blank=True, help_text=(
         'Flip this flag on (Yes) or off (No) for everyone, overriding all '
         'other settings. Leave as Unknown to use normally.'))
     #: Enable for a client (must provide host_name field)
