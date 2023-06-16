@@ -5,7 +5,7 @@ description = ""
 authors = ["Thomas Weatherston <thomas.weatherston@atheon.co.uk>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.9"
 Django = ">= 3 < 5"
 requests = "^2"
 python-json-logger = "^2"
